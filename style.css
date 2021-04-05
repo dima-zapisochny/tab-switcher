@@ -1,0 +1,84 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*------------------------- Tabs -------------------------*/
+
+#tabs {
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+        
+.tabs__titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 10%;
+	margin-bottom: 40px;
+}
+        
+.tabs__title {
+    font-size: 24px;
+    margin: 0 100px;
+    position: relative;
+    color: dimgray;
+}
+        
+.tabs__title:hover {
+    cursor: pointer;
+    }
+
+.tabs__content {
+    display: block;
+}
+
+.tabs__content-caption {
+    display: flex;
+    justify-content: center;
+    color: #f2c71a;
+    font-size: 33px;
+	letter-spacing: 1px;
+}
+
+.tabs__content img {
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    height: 550px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.8);
+}
+
+.active {
+    color:#283752;
+    transition: 0.5s;
+}
+
+.active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -25%;
+    left: -10%;
+    width: 120%;
+    height: 2px;
+    background-color: #283752;
+    animation: underline 0.5s;
+
+}
+
+@keyframes underline {
+    from {width: 0%;}
+    to {width: 120%;}
+    }
+        
+.invisibility {
+    display: none;
+}
+        
+/*------------------------- Tabs END -------------------------*/

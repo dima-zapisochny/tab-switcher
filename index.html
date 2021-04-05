@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Tab switcher</title>
+</head>
+<body>
+
+   
+<section id="tabs">
+
+<!--========================== Tabs ===========================-->
+
+    <div class="tabs__titles">
+        <h2 class="tabs__title active" onclick="addManagerService()">THE FIRST</h2>
+        <h2 class="tabs__title" onclick="addManagerService()">THE SECOND</h2>
+        <h2 class="tabs__title" onclick="addManagerService()" data-anim="slideInLeft">THE THIRD</h2>
+    </div>
+
+<!--========================== Tabs END ===========================-->
+
+<!--======================== Tabs content =========================-->
+
+    <div class="tabs__content">
+        <h2 class="tabs__content-caption">NEW YORK</h2>
+        <img src="images/new york.jpg" alt="new york">
+    </div>
+
+    <div class="tabs__content invisibility">
+        <h2 class="tabs__content-caption">SAN FRANCISCO</h2>
+        <img src="images/san francisco.jpg" alt="san francisco">
+    </div>
+
+    <div class="tabs__content invisibility">
+        <h2 class="tabs__content-caption">WASHINGTON</h2>
+        <img src="images/washington.jpg" alt="washington">
+    </div>
+
+<!--======================== Tabs content END =========================-->
+
+</section>
+
+</body>
+</html>
